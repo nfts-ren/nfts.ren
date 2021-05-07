@@ -1,0 +1,16 @@
+{
+  "name": "Epoch 14-1",
+  "series": "Epoch 14",
+  "attributes": [
+    {
+      "trait_type": "epoch",
+      "value": "14"
+    },
+    {
+      "trait_type": "tag",
+      "value": "NFTs.REN"
+    }
+  ],
+  "image": "ipfs://QmcpYkFFpA3x54ZbmxWGoocZjhWsBsEbp8UuYAcy9tgxWB/14/1/media.mp4",
+  "artist": "atescch"
+}
