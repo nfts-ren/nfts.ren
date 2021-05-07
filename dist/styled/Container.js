@@ -1,4 +1,4 @@
-import styled from "../../_snowpack/pkg/styled-components.js";
+import styled from "../../snowpack/pkg/styled-components.js";
 const Container = styled.div`
   position: relative;
   max-width: 1150px;

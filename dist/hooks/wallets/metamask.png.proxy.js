@@ -1,1 +1,0 @@
-export default "/dist/hooks/wallets/metamask.png";
