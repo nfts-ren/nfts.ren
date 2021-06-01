@@ -23,6 +23,7 @@ const EpochData12 = require("../src/hooks/merkle/12.json");
 const EpochData13 = require("../src/hooks/merkle/13.json");
 const EpochData14 = require("../src/hooks/merkle/14.json");
 const EpochData15 = require("../src/hooks/merkle/15.json");
+const EpochData16 = require("../src/hooks/merkle/16.json");
 
 const epochs = [
   EpochData1,
@@ -40,6 +41,7 @@ const epochs = [
   EpochData13,
   EpochData14,
   EpochData15,
+  EpochData16,
 ];
 
 const template = (name, epoch, mediaFile, artist) => {
