@@ -60,7 +60,7 @@ const template = (name, epoch, mediaFile, artist) => {
     ],
     image: mediaFile.replace(
       "/images/",
-      "ipfs://QmS9FXpRiMtDuHGxrrbzJtUFGzXNs5mtsRHT74hX6DvShU/"
+      "ipfs://QmQvbWeowS1K45pLYR5AnUJ6CDmmLP6Bf3dBxHbHazgksG/"
     ),
   };
   if (artist) {
