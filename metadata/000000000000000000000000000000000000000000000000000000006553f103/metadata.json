@@ -1,0 +1,15 @@
+{
+  "name": "Epoch 17-3",
+  "series": "Epoch 17",
+  "attributes": [
+    {
+      "trait_type": "epoch",
+      "value": "17"
+    },
+    {
+      "trait_type": "tag",
+      "value": "NFTs.REN"
+    }
+  ],
+  "image": "ipfs://QmQrqSmVhLfLmV1AbWgpyAjqUvkkcesan35Y622RzFzg5V/17/3/media.jpg"
+}

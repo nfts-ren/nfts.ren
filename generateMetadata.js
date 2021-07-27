@@ -24,6 +24,7 @@ const EpochData13 = require("../src/hooks/merkle/13.json");
 const EpochData14 = require("../src/hooks/merkle/14.json");
 const EpochData15 = require("../src/hooks/merkle/15.json");
 const EpochData16 = require("../src/hooks/merkle/16.json");
+const EpochData17 = require("../src/hooks/merkle/17.json");
 
 const epochs = [
   EpochData1,
@@ -42,6 +43,7 @@ const epochs = [
   EpochData14,
   EpochData15,
   EpochData16,
+  EpochData17,
 ];
 
 const template = (name, epoch, mediaFile, artist) => {
@@ -60,7 +62,7 @@ const template = (name, epoch, mediaFile, artist) => {
     ],
     image: mediaFile.replace(
       "/images/",
-      "ipfs://QmQvbWeowS1K45pLYR5AnUJ6CDmmLP6Bf3dBxHbHazgksG/"
+      "ipfs://QmQrqSmVhLfLmV1AbWgpyAjqUvkkcesan35Y622RzFzg5V/"
     ),
   };
   if (artist) {
@@ -76,6 +78,7 @@ const main = async () => {
   await mkdir("./metadata");
 
   for (const epoch of epochs) {
+    console.log(`Epoch #${epoch.id}`);
     for (let i = 0; i < epoch.nfts.length; i++) {
       const nft = epoch.nfts[i];
       const metadata = template(nft.name, epoch.id, nft.url, epoch.artist);
@@ -88,6 +91,8 @@ const main = async () => {
         `./metadata/${hexBuffer}/metadata.json`,
         JSON.stringify(metadata, null, "  ")
       );
+
+      console.log(`\tArtwork #${i + 1}: ${hexBuffer}`);
     }
   }
 };
