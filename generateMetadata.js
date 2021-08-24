@@ -25,6 +25,7 @@ const EpochData14 = require("../src/hooks/merkle/14.json");
 const EpochData15 = require("../src/hooks/merkle/15.json");
 const EpochData16 = require("../src/hooks/merkle/16.json");
 const EpochData17 = require("../src/hooks/merkle/17.json");
+const EpochData18 = require("../src/hooks/merkle/18.json");
 
 const epochs = [
   EpochData1,
@@ -44,6 +45,7 @@ const epochs = [
   EpochData15,
   EpochData16,
   EpochData17,
+  EpochData18,
 ];
 
 const template = (name, epoch, mediaFile, artist) => {
@@ -62,7 +64,7 @@ const template = (name, epoch, mediaFile, artist) => {
     ],
     image: mediaFile.replace(
       "/images/",
-      "ipfs://QmQrqSmVhLfLmV1AbWgpyAjqUvkkcesan35Y622RzFzg5V/"
+      "ipfs://Qmd8A3LuwZGMaij3Wkew3v4UfjQD9z7N1FGvkSsituGTYC/"
     ),
   };
   if (artist) {
